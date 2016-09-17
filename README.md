@@ -2,21 +2,21 @@
 
 `caffeinate` is available in macOS and prevents the computer from going to sleep.
 
-This module spawns `caffeinate` which will prevent the computer from going to sleep as long as the process with the provided pid is running.
-
 ``` javascript
 const caffeinate = require('caffeinate')
 
-// promise
+// use with promises
 caffeinate(process.pid)
-  .then(pid => console.log(pid))
+  .then(pid => console.log(console.log(`caffeinate pid: ${pid}`)))
   .catch(e => console.error(e))
 
-// callback
+// use with callback
 caffeinate(process.pid, (err, pid) => {
   if (err) throw new Error(err)
-  console.log(pid)
+  console.log(console.log(`caffeinate pid: ${pid}`))
 })
-```
 
-The returned value is the process identifier for the spawned `caffeinate` instance.
+// not bound to any process
+caffeinate()
+  .then(pid => console.log(`caffeinate pid: ${pid}`))
+```

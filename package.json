@@ -1,6 +1,6 @@
 {
   "name": "caffeinate",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "prevents a macOS computer from sleeping",
   "main": "./dist/index.js",
   "scripts": {
@@ -11,7 +11,8 @@
   },
   "keywords": [
     "macOS",
-    "utility"
+    "utility",
+    "sleep"
   ],
   "author": "rogerbf <roger@bergfalk.nu> (http://bergfalk.nu/)",
   "license": "MIT",
