@@ -1,44 +1,29 @@
 {
   "name": "caffeinate",
-  "version": "0.1.0",
-  "description": "prevents a macOS computer from sleeping",
-  "main": "./dist/index.js",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo 'no tests'",
-    "prebuild": "npm test && rimraf dist",
-    "build": "babel --ignore *.test.js --out-dir dist src",
-    "prepublish": "npm run build"
+    "start": "node index.js",
+    "watch:start": "chokidar \"*.js\" \"./**/*.js\" -c \"npm run start\"",
+    "eslint": "eslint .",
+    "eslint:fix": "eslint --fix ."
   },
-  "keywords": [
-    "macOS",
-    "utility",
-    "sleep"
-  ],
+  "keywords": [],
   "author": "rogerbf <roger@bergfalk.nu> (http://bergfalk.nu/)",
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "6.14.0",
-    "babel-preset-es2015": "6.14.0",
-    "rimraf": "2.5.4"
+    "chokidar-cli": "^1.2.0",
+    "eslint": "^3.15.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.2",
+    "eslint-plugin-standard": "^2.0.1"
   },
-  "files": [
-    "dist",
-    "README.md"
-  ],
-  "eslintConfig": {
-    "env": {
-      "node": true
-    },
-    "parserOptions": {
-      "ecmaVersion": 6
-    }
+  "dependencies": {
+    "args-manager": "^2.0.1",
+    "options-to-args": "^0.0.1"
   },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
-  },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rogerbf/caffeinate.git"

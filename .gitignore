@@ -1,7 +1,5 @@
 node_modules
-dist
 .DS_Store
 package
 caffeinate*.tgz
 npm-debug.log
-anteckningar
