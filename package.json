@@ -1,7 +1,7 @@
 {
   "name": "caffeinate",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Prevent the system from going to sleep",
   "main": "index.js",
   "scripts": {
     "test": "echo 'no tests'",
@@ -10,7 +10,11 @@
     "eslint": "eslint .",
     "eslint:fix": "eslint --fix ."
   },
-  "keywords": [],
+  "keywords": [
+    "sleep",
+    "macOS",
+    "utility"
+  ],
   "author": "rogerbf <roger@bergfalk.nu> (http://bergfalk.nu/)",
   "license": "MIT",
   "devDependencies": {
@@ -21,7 +25,6 @@
     "eslint-plugin-standard": "^2.0.1"
   },
   "dependencies": {
-    "args-manager": "^2.0.1",
     "options-to-args": "^0.0.1"
   },
   "repository": {
