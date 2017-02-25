@@ -1,6 +1,6 @@
 # caffeinate
 
-`caffeinate` is a system utility provided in macOS and prevents the system from sleeping indefinitely, or, on behalf of a utility.
+`caffeinate` is a system utility provided in macOS which prevents the system from sleeping indefinitely or on behalf of a utility.
 
 ## usage
 
@@ -18,6 +18,6 @@ caffeinate({ pid: 45623 })
 
 Spawns caffeinate. Resolves with the pid of the spawned caffeinate instance.
 
-`options` can be any of those supported by caffeinate with the addition of `timeout` (`t`) and `pid` (`w`).
+`options` can be any of those supported by caffeinate. For the sake of readability you can use `timeout` and `pid` in place of `t` and `w` respectively.
 
 [options-to-args](https://www.npmjs.com/package/options-to-args) handles the conversion of options into spawn args.
