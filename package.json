@@ -1,6 +1,6 @@
 {
   "name": "caffeinate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Prevent the system from going to sleep",
   "main": "index.js",
   "scripts": {

@@ -1,7 +1,7 @@
 module.exports = ({ spawn, args }, options = {}) => {
   return new Promise((resolve, reject) => {
     const caffeinate = spawn(
-      `caffeinte`,
+      `caffeinate`,
       args
       .addAlias({ timeout: `t` })
       .addAlias({ watch: `w` })
